@@ -1,21 +1,17 @@
 angular.module("todoListApp", [])
 .controller('mainCtrl', function($scope) {
-  $scope.helloWorld = function() {
-    console.log("Hello there! This is helloWorld controller function, in the mainCtrl!");
+  $scope.learningNgChange = function() {
+    console.log("An input changed!");
   };
 })
 
-.controller('coolCtrl', function($scope){
-  $scope.whoAmI = function() {
-      console.log("hello there, this is the coolCtrl function!");
-  };
+    $scope.todos = [
+      {"name" : "Clean the house"},
+      {"name" : "Water the dog"},
+      {"name" : "Feed the lawn"},
+      {"name" : "Pay dem bills"},
+      {"name" : "Run"},
+      {"name" : "Swim"}
+    ]
 
-  $scope.helloWorld = function(){
-    console.log("This is not the main ctrl!");
-  }
-})
-
-.controller('imASibling', function($scope) {
-  $scope.foobar = 1234;
-  // do other cool stuff
 });
